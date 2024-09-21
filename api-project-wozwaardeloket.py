@@ -26,7 +26,7 @@ file_exists = os.path.isfile("wozwaardenloket-output.csv")
 # Create new csv file to add data to
 with open("wozwaardenloket-output.csv", "a", newline='') as file:
     writer = csv.writer(file, delimiter=',', dialect='unix')
-    headers = ["woz"]
+    headers = ["woz2023", "woz2022", "woz2021", "woz2020", "woz2019", "woz2018", "woz2017", "woz2016", "woz2015", "woz2014"]
 
     # Only add headers when the file is newly created
     if not file_exists:
